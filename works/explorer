@@ -1,0 +1,105 @@
+let arr = [[null,null,null],[null,null,null],[null,null,null],[null,null,null]]
+// console.table(arr)
+
+let array = []
+
+let row1 = []
+let obj1 = {
+    name: "joel",
+    population: 1000,
+    temperature: 10,
+    currency:"NGN"
+}
+
+let obj2 = {
+    name: "victor",
+    population: 1000,
+    temperature: 3.0,
+    currency: "NGN"
+}
+let obj3 = {
+    name: "harry",
+    population: 1000,
+    temperature: 7.0,
+    currency: "NGN"
+}
+row1.push(null)
+row1.push(obj1)
+row1.push(obj2)
+row1.push(obj3)
+array.push(row1)
+
+let row2 = []
+let obj4 = {
+    name: "moyin",
+    population: 1000,
+    temperature: 12,
+    currency: "NGN"
+
+}
+
+let obj5 = {
+    name: "precious",
+    population: 1000,
+    temperature: 4.5,
+    currency: "NGN"
+
+}
+let obj6 = {
+    name: "ashley",
+    population: 1000,
+    temperature: 8,
+    currency: "NGN"
+}
+row2.push(obj4)
+row2.push(obj5)
+row2.push(obj6)
+row2.push(null)
+array.push(row2)
+
+let row3 = []
+let obj7 = {
+    name: "benson",
+    population: 1000,
+    temperature: 6,
+    currency: "NGN"
+
+}
+
+let obj8 = {
+    name: "esther",
+    population: 1000,
+    temperature: -0,
+    currency: "NGN"
+
+}
+let obj9 = {
+    name: "kelvin",
+    population: 1000,
+    temperature: 11,
+    currency: "NGN"
+}
+row3.push(obj7)
+row3.push(obj8)
+row3.push(null)
+row3.push(obj9)
+array.push(row3)
+
+
+let totalPopulation = 0
+
+for (let a = 0; a < array.length; a++){
+    for (let b = 0; b < array[a].length; b++){
+        console.log(array[a][b])
+        let population = array[a][b]
+        if (population && population.temperature <= 10){
+            totalPopulation += population.population
+        }
+
+
+        
+    }
+
+}
+  
+console.log(" \n The total population with the temperature less or equal 10 is : " + totalPopulation)  

@@ -1,0 +1,53 @@
+let x = [2,4,5,6,7,12];
+let [a,b] = x;
+console.log(a)
+console.log(b)
+
+
+let array = []
+let obj = {a: 1, b: 2};
+({a:array[0], b: array[1]} = obj )
+console.log(array)
+
+
+let arrays = [
+    {
+    name: "joel",
+    pop: 132435
+},{
+
+    name: "joel",
+    pop: 132437
+},{
+
+    name: "joel",
+    pop: 13243,
+}]
+
+for (let a = 0; a < arrays.length; a++){
+    let population = arrays[a]
+    let m = population.pop
+    console.log(m)
+}
+
+store = [];
+for (let b in arrays){
+    ({pop: store[b]} = arrays[b]);
+}
+console.log(store);
+
+
+let objs = {
+    name: "moyin",
+    age: 54,
+    cohort: 17
+
+}
+
+let {age} = objs
+console.log(age)
+
+let arryss = [1,2,3,4,5,6]
+
+let [ e, d, ...rest] = arryss;
+console.log(rest)

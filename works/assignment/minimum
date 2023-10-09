@@ -1,0 +1,11 @@
+let minimum = function(num,nums){
+    if (num < nums){
+        return num;
+    }else{
+        return nums;
+    }
+}
+console.log(minimum(7,25))
+console.log(minimum(-55,34))
+console.log(minimum(55,37))
+console.log(minimum(34,34))

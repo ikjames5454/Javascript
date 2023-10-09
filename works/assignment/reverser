@@ -1,0 +1,37 @@
+
+let nums = function(nun){
+    let temp
+    for ( let a = 0; a < nun.length / 2; a++){
+        temp = nun[a];
+        nun[a] = nun[nun.length-1-a];
+        nun[nun.length-1-a] = temp;
+
+    }
+    return nun;
+}
+
+let numbs = function(n){ 
+    for (let a = n.length; a >= 0; a--){
+        return n;
+    }
+}
+let number = [1,2,3,4,5,6,7]
+console.log(nums(number))
+console.log(numbs(number))
+
+let err = function(numb){
+    let a = 0;
+    let b = numb.length-1;
+    let temp = 0;
+    while (a < b){
+        temp = numb[a];
+        numb[a] = numb[b];
+        numb[b] = temp;
+        a++;
+        b--;
+
+    }
+    return numb;
+}
+let array = [1,2,3,4,5,6,7]
+console.log(err(array))

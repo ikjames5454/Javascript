@@ -1,0 +1,44 @@
+const square = function(x){
+    return x ** x
+}
+console.log(square(12))
+
+const noise = function(){
+    console.log("shout")
+}
+noise();
+
+let power = function(base, height){
+    let result = 1;
+    for (let o = 0; o < height; o++){
+        result *= base
+    }
+    return result
+}
+console.log(power(3,4));
+
+let x = 10;
+if (true){
+    let y = 20;
+    var z = 30;
+    console.log(x + y + z);
+}
+console.log(x +  z)
+
+const half = function(n){
+    return n / 2;
+}
+let n = 10;
+console.log(half(1000));
+console.log(n)
+
+const hum = function(factor){
+    const ing = function(amount,unit,name){
+        let ingAmt = amount * factor;
+        if (ingAmt > 1){
+        unit += "s";
+    }
+    console.log(`${ingAmt} ${unit} ${name}`)
+}
+    }
+    
